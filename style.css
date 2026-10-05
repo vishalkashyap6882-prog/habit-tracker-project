@@ -1,0 +1,182 @@
+body {
+  
+.playfair-display-uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+  background-color: #eef1f6;
+  color: #1b2540;
+  margin: 0;
+}
+
+header {
+  background-color: #63074e;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+}
+
+header p {
+  margin: 0;
+  color: #c9d1e6;
+}
+
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.box {
+  background-color: white;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.box h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.addRow {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+input[type="number"] {
+  width: 80px;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 14px;
+  background-color: #91108a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4c0a47;
+}
+
+.grayBtn {
+  background-color: #91108a;
+  margin-top: 12px;
+}
+
+.deleteBtn {
+  background-color: #c0392b;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  border-top: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.habitTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dayRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dayBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.dayBox input {
+  width: 22px;
+  height: 22px;
+  margin-bottom: 4px;
+}
+
+.info {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  color: #5c6685;
+}
+
+.bar {
+  background-color: #ddd;
+  height: 12px;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+
+.bar div {
+  background-color: #3e4d0a;
+  height: 12px;
+  width: 0%;
+  border-radius: 6px;
+}
+
+.bar.full div {
+  background-color: #818a1f;
+}
+
+.goalButtons {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.goalButtons button {
+  padding: 6px 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: gray;
+}
+
+
+@media (max-width: 450px) {
+  .addRow {
+    flex-wrap: wrap;
+  }
+  .addRow button {
+    width: 100%;
+  }
+}
